@@ -1,37 +1,34 @@
-/* 1. Global Reset/Box-Sizing */
+/* 1. Basic reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 2. Body with a cosmic background image or color */
+/* 2. Full-page gradient background */
 body {
   font-family: "Arial", sans-serif;
-  /* You can use a cosmic image or fallback color. This uses a NASA starfield image from a public domain. */
-  background: url("/images/starfield.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: #eee;
-  line-height: 1.6;
+  /* Linear gradient background (top-left to bottom-right) */
+  background: linear-gradient(45deg, #1c1c1c, #413c69, #4a47a3);
+  /* Fallback color if gradient not supported */
+  background-color: #1c1c1c;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;  text-align: center; /* Centers text in body */
+  min-height: 100vh;
 }
 
-/* 3. Header: distinct background overlay */
+/* 3. Header styling */
 header {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 1rem;
-  text-align: center;
 }
 
-/* 4. Title in header */
-header h1 {
-  margin-bottom: 0.5rem;
-  color: #e0ccff; /* Light purple hue */
-}
-
-/* 5. Navigation links */
+/* 4. Navigation links */
 nav a {
-  margin: 0 0.75rem;
-  color: #ffd700; /* Gold color */
+  color: #ffd700; /* Gold color for links */
+  margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
 }
@@ -39,31 +36,30 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* 6. Main Content Container */
+/* 5. Main container to center content with a nice width */
 main {
-  margin: 2rem auto;
   max-width: 800px;
+  margin: 2rem auto; /* Centers the main content horizontally */
   padding: 1rem;
-  background-color: rgba(25, 25, 25, 0.75);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
 
-/* 7. Footer styling */
+/* 6. Footer */
 footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 1rem;
   font-size: 0.9rem;
+  position: relative;
 }
 
-/* 8. Headings */
-h2, h3 {
-  color: #ffd700; /* Gold color */
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+/* 7. Headings (h1, h2, etc.) */
+h1, h2, h3 {
+  color: #ffd700; /* Gold headings */
+  margin-bottom: 1rem;
 }
 
-/* 9. Links in body */
+/* 8. Links within content */
 a {
   color: #ffd700;
 }
@@ -71,18 +67,29 @@ a:hover {
   opacity: 0.8;
 }
 
-/* 10. The quote-block */
+/* 9. Lists (for your blog links) */
+ul {
+  list-style-type: none; /* Remove default bullets */
+  margin: 1rem 0;
+  padding: 0;
+}
+ul li {
+  margin: 0.5rem 0;
+}
+
+/* 10. Quote block if you used a shortcode */
 .quote-block {
   margin: 1rem 0;
-  padding: 0.75rem 1rem;
-  background-color: rgba(50, 50, 50, 0.8);
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
   border-left: 4px solid #ffd700;
   font-style: italic;
+  border-radius: 4px;
 }
 .quote-block cite {
   display: block;
   text-align: right;
   margin-top: 0.5rem;
   font-weight: bold;
-  color: #e0ccff;
+  color: #ffd700;
 }
