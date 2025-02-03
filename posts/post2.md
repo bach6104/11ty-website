@@ -8,7 +8,7 @@ permalink: /posts/post2.html
 <div class="post-container">
   <img src="/images/post2.jpeg" alt="Moon Reflection" />
   <div>
-    Reflections from the Nebula
+    Reflections from the Moon and Galaxy
 
     Drifting through a luminescent nebula feels like dancing with the heartbeat of the universe. Clouds of ionized gas glimmer in hues of purple and azure, illuminating my cockpit in surreal color.
 
