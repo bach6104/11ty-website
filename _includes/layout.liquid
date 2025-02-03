@@ -1,22 +1,24 @@
----
-title: 11ty Boilerplate
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="/styles/screen.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <!-- Optionally include a favicon or other meta tags here -->
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h1>{{ title }}</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+  </header>
+  <main>
     {{ content }}
+  </main>
+  <footer>
+    <p>&copy; 2025 Explorer’s Blog</p>
+  </footer>
 </body>
 </html>

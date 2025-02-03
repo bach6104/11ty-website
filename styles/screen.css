@@ -1,50 +1,88 @@
+/* 1. Global Reset/Box-Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Body with a cosmic background image or color */
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
+  font-family: "Arial", sans-serif;
+  /* You can use a cosmic image or fallback color. This uses a NASA starfield image from a public domain. */
+  background: url("/images/starfield.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+  line-height: 1.6;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
+/* 3. Header: distinct background overlay */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  text-align: center;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+/* 4. Title in header */
+header h1 {
+  margin-bottom: 0.5rem;
+  color: #e0ccff; /* Light purple hue */
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+/* 5. Navigation links */
+nav a {
+  margin: 0 0.75rem;
+  color: #ffd700; /* Gold color */
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+/* 6. Main Content Container */
+main {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+  background-color: rgba(25, 25, 25, 0.75);
+  border-radius: 8px;
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+/* 7. Footer styling */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* 8. Headings */
+h2, h3 {
+  color: #ffd700; /* Gold color */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-img.about {
-    opacity: 0.5;
+/* 9. Links in body */
+a {
+  color: #ffd700;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* 10. The quote-block */
+.quote-block {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background-color: rgba(50, 50, 50, 0.8);
+  border-left: 4px solid #ffd700;
+  font-style: italic;
+}
+.quote-block cite {
+  display: block;
+  text-align: right;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #e0ccff;
 }
