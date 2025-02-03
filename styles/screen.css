@@ -93,3 +93,32 @@ ul li {
   font-weight: bold;
   color: #ffd700;
 }
+
+.post-container {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center; /* Center horizontally if you like */
+  margin: 2rem auto;
+  max-width: 900px; /* Ensures it doesn’t stretch too wide */
+  padding: 0 1rem;  /* Some horizontal padding */
+}
+
+/* The image on the left side */
+.post-container img {
+  width: 300px;   /* Fixed or max width so it doesn't overwhelm text */
+  max-width: 40%; /* or use a percentage if you prefer flexible sizing */
+  margin-right: 1.5rem;
+  border-radius: 6px; /* Slight rounding for aesthetics */
+  object-fit: cover;  /* If you want consistent aspect ratio */
+}
+
+/* The text content on the right */
+.post-container div {
+  flex: 1; /* Take up remaining space */
+}
+
+/* Headings for posts */
+.post-container h1 {
+  margin-top: 0; /* remove default margin if you want it flush */
+  color: #ffd700; /* gold text if you’re using a cosmic theme */
+}
